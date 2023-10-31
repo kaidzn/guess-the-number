@@ -41,6 +41,7 @@ document.querySelector(".check").addEventListener('click', function() {
 document.querySelector(".reset").addEventListener("click", function(){
     score = 20;
     randomNumber = Math.floor(Math.random()*20) + 1;
+    document.querySelector("body").style.backgroundColor = "#334155"
     document.querySelector(".mode").textContent = "Болжам басталды...";
     document.querySelector(".score-p").textContent =  score;
     document.querySelector(".themain-number").textContent = "?";
