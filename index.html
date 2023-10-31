@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="output/output.css">
     <title>Guess The Number</title>
 </head>
-<body class="bg-slate-700 text-white m-0 p-0">
-    <div class="container mx-auto grid h-[100vh] place-items-center">
-        <div class="first-line">
-            <p>Choose a number between 1 and 20</p>
+<body class="bg-slate-700 text-white m-0 p-0 flex flex-col">
+    <button class="reset text-xl border">Қайтадан Бастау!</button>
+    <div class="container mx-auto flex flex-col items-center ">
+        <div class="first-line text-center">
+            <p>1 мен 20 арасындағы санды таңда</p>
         </div>
         <div class="main flex flex-col items-center">
-            <p class="themain-number grid place-content-center text-[11rem] m-0 p-0 mb-[2rem] ">
+            <p class="themain-number grid place-content-start text-[11rem] m-0 p-0 mb-[2rem] ">
                 ?
             </p>
             <div class="undermain flex justify-between items-center gap-x-[5rem]">
                 <div class="input flex flex-col gap-y-[1rem]">
                     <input type="number" placeholder="1" class="w-[9rem] h-[6rem] text-black text-center text-5xl">
-                    <button class="text-3xl border">Check!</button>
+                    <button class="check text-3xl border">Тексер!</button>
                 </div>
                 <div class="result">
-                    <p class="mode">Start guessing...</p>
+                    <p class="mode">Болжам басталды...</p>
                     <div class="score">
-                        <p class="score-p">Score: <span>20</span></p>
+                        <p class="score-p">Мумкіндік: <span>20</span></p>
                     </div>
                 </div>
             </div>
